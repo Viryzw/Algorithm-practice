@@ -5,7 +5,7 @@
 // Sample 2
 // Input: aab#d scsf#d     Output: False
 
-#include <iostream>
+#include<iostream>
 using namespace std;
 
 bool isEqual(string S, string T) {
