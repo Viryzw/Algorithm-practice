@@ -2,6 +2,10 @@
 // Input：第一行包含一个整数C，表示测试组数
 // 接下来C行，每行包含两个正整数M和N，表示游戏的初始数字对
 // Output：Stan获胜则输出Stan wins，反之输出Ollie wins
+// Sample 1
+// Input: 2 \\ 25 7 \\ 24 15     Output: Stan wins \\ Ollie wins
+// Sample 2
+// Input: 1 \\ 1 1      Output: Stan wins
 
 #include<iostream>
 #include<vector>
