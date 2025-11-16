@@ -2,7 +2,7 @@ import subprocess
 import os
 
 # 文件名
-CPP_FILE = "experiment.cpp"
+CPP_FILE = "experiment1.cpp"
 EXE_FILE = "experiment1"  # Windows 下会自动加 .exe
 
 # 自动检测系统
@@ -13,7 +13,8 @@ if os.name == "nt":  # Windows
 def compile_cpp():
     if not os.path.exists(EXE_FILE):
         print("正在编译 C++ 源文件...")
-        cmd = ["g++", "-std=c++11", "-O2", CPP_FILE, "-o", EXE_FILE]
+        # cmd = ["g++", "-std=c++11", "-O2", CPP_FILE, "-o", EXE_FILE]
+        cmd = ["g++", "-std=c++11", "-O2", os.path.abspath(CPP_FILE), "-o", os.path.abspath(EXE_FILE)]
         result = subprocess.run(cmd, capture_output=True, text=True)
         if result.returncode != 0:
             print("编译失败：")
